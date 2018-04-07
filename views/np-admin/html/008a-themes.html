@@ -1,0 +1,68 @@
+<div class="panel panel-default theme_main_container">
+    <div style="padding:1px;" class="">
+
+    	<!--[tab names - start]-->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#theme" role="tab" data-toggle="tab" aria-expanded="false">Themes</a>
+            </li>
+            
+            <li role="presentation" class="">
+                <a href="#upload-new" class= "upload_new_check" role="tab" data-toggle="tab" data-original-title="" title="" aria-expanded="true">Upload New</a>
+            </li>
+        </ul>
+        <!--[tab names - end]-->
+
+        <!--[tab content - start]-->
+        <div class="tab-content" style="padding:10px;">
+
+            <div class="current_view_type" style="display:none"></div>
+
+
+        	<!--[tab theme - start]-->             
+            <div role="tabpanel" class="tab-pane tab_theme active row" id="theme" ></div>           
+            <!--[tab theme - end]-->
+
+
+            <!--[tab upload new - start]-->
+            <div role="tabpanel" class="tab-pane upload-new " id="upload-new">
+                
+                <!--[container upload new button - start]-->
+                <div class="container_new_theme_uploader">
+                    <p>Here you can upload a new theme </p>
+                    <br>
+                    <input class="btn btn-primary pull-center files btn_new_theme_files" type="file"  accept="application/zip">
+                    <br>
+                </div>
+                <!--[container upload new button - end]-->
+
+
+                <!--[container alert messages - start]-->
+                <div class="new_theme_file_upload_alert"></div>
+                <br><br>
+
+                <!--[container alert messages - end]-->
+
+                <div class="new_theme_file_upload_preview"></div>
+                
+		 		<!--[Progress Bar - Start]-->
+                <br><br>
+				<div class="bs-example ThemeFileUploadProgressBar" style="display:none; ">
+					<div class="progress">
+						<div class="progress-bar  progress-bar-success" style="width: 0%;" >1%</div>
+					</div>
+				</div>
+				<!--[Progress Bar - End]-->
+                
+		 		<br><br>
+		 		
+		 		
+
+            </div>
+            <!--[tab upload new - end]-->
+
+        </div>
+        <!--[tab content - end]-->
+
+    </div>
+</div>

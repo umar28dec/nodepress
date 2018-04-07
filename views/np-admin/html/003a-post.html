@@ -1,0 +1,208 @@
+
+
+<div class="row animated fadeInUp">
+
+	<!--[Post Content DIV - Start]-->
+	<div class="col-md-10"> 
+
+		<div class="form-group">
+			<label style="font-size:16px;"  >Post Name</label>
+			<input type="text" class="form-control PostTitle"  placeholder="Post Title" autofocus tabindex=0>
+			  
+		    <br><br>
+
+		    <div class="input-group">
+		      <div class="input-group-addon SiteURL">SiteURL</div>
+		      <input type="text" class="form-control PostURL" placeholder="my-post-url" tabindex=-2>		       
+		    </div>
+
+  		</div>
+
+  		<br>
+
+  		<!--[Teaser Content - Start]-->
+		<div class=" panel panel-default panel-body">
+	  		<label style="font-size:16px;"  data-target="#Container_TeaserContent" data-toggle="collapse" class="btn btn-default TeaserAlertMsg " >Teaser Content
+	  		<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="Click The Button To Hide/Show" data-placement="right"></i>
+	  		</label>
+	  		<br>
+
+
+	  		<div id="Container_TeaserContent">
+
+	  		 
+	  			<textarea class="np_editor Content_Teaser " id="Content_Teaser" tabindex=2> </textarea>
+
+  				<br>
+			    <div class="input-group">
+			      <div class="input-group-addon ">Read More
+			      	<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="Read More Button Text" data-placement="top"></i>
+			      </div>
+			      <input type="text" class="form-control ReadMore" value="Read More">		       
+			    </div>
+			</div>
+		</div>
+	    <!--[Teaser Content- End]-->
+		<br>		
+
+  		<!--[Post Content - Start]-->
+		<div class=" panel panel-default panel-body">
+	  		<label style="font-size:16px;"  data-target="#Container_PostContent" data-toggle="collapse" class="btn btn-default PostContentAlertMsg" >Post Content
+	  		<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="Click The Button To Hide/Show" data-placement="right"></i>
+	  		</label>
+	  		<br>
+	  		<div id="Container_PostContent">
+	  			<br>
+	  			<div class="btn btn-primary btn_insert_gallery_screen">Insert Gallary</div>
+	  			<br>
+	  			<textarea class="np_editor Content_Post "   id="Content_Post" tabindex=3> </textarea>
+	  		</div>
+  		</div>
+  		<br>
+  		<!--[Teaser Content- End]-->
+	 
+
+	</div>
+
+	<!--[Post Content DIV - End]-->
+
+	<!--[Post SideBar DIV - Start]-->
+	<div class="col-md-2">		
+		  
+			<!--[Publish Date/Time SideBar DIV - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div href="#" data-target="#Container_PublishDttm" data-toggle="collapse"  > Publish						 
+						<span class="fa fa-caret-down btn pull-right"  >  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_PublishDttm">
+					<a class="btn btn-default btn-sm pull-left Btn_PublishPost" update_type="draft" post_status="draft" href="#" role="button" tabindex=-2>Save Draft</a>
+					<a class="btn btn-default btn-sm pull-right Btn_PostPreview" href="#" role="button" tabindex=-2>Preview</a>
+					<br><br>
+
+					<label>Access Type</label>
+					<select class="form-control LinkAccessType"  >
+					 	<option value="public" >public</option>	
+					 	<option value="link access">link access</option>											  				 
+					</select> 
+
+					<br><br>
+					
+					<label>Publish Date/Time</label>	
+					<br>
+					<span class="curr_post_dttm"></span>
+					<br><br>
+
+					<input type="text" class="form-control PostDttm" tabindex=4 >
+					
+					<br> 
+				 	<div class="btn  btn-primary Btn_PublishPost" update_type="new" post_status="publish">Publish</div>
+				</div>
+			</div>
+			<!--[Publish Date/Time SideBar DIV - End]-->
+
+			<!--[Comments Allow - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div data-target="#Container_Allow_Comments" data-toggle="collapse"> Allow Comments						 
+						<span class="fa fa-caret-down btn pull-right">  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_Allow_Comments">
+					<select class="form-control AllowComments" tabindex=6>
+					 	<option value="Yes" >Yes</option>	
+					 	<option value="No">No</option>											  				 
+					</select> 					 
+				</div>
+			</div> 
+			<!--[Comments Allow - End]-->
+
+			<!--[SideBar Tags - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div href="#" data-target="#Container_Tags" data-toggle="collapse"   > Tags						 
+						<span class="fa fa-caret-down btn pull-right"  >  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_Tags">
+					<textarea class="PostTags" placeholder='write some tags' rows="10" tabindex=5 ></textarea>
+					<br>
+		 
+				</div>
+			</div>
+			<!--[SideBar Tags  - End]-->
+
+
+			<!--[Categories  - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div data-target="#Container_Categories" data-toggle="collapse"> Categories						 
+						<span class="fa fa-caret-down btn pull-right">  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_Categories">
+
+					<select class="selectpicker form-control Categories_Options" data-live-search="true"  multiple title="Pick One"  data-selected-text-format="count" tabindex=6>
+					  <option value="nodepress">Nodepress</option>
+					  <option data-divider="true"></option>
+					  <option value="nodepress-js">Nodepress JS</option>
+					  <option data-divider="true"></option>
+					</select>
+
+					<span class="CurSelectedCategory" ></span>
+					
+					<div class="Container_New_Categroy" style="display:none">
+						<br>
+						<span class="btn btn-default btn-sm glyphicon glyphicon-remove pull-right Btn_Close_Container_New_Categroy" data-toggle="tooltip" title="Click Close" data-placement="left"></span>  
+						<br>
+						<span class="PostMst"></span>
+						<input type="text" class="form-control NewCategory" placeholder="New Category Name" >
+						<br>
+						<div href="#" class="btn btn-default Btn_AddCategory">Add Category</div>
+					</div>
+					<br><br>
+					<div   class="btn btn-default Load_NewCategory">+ Add New Category</div>
+		 
+				</div>
+			</div>
+	
+
+
+			<!--[Categories  - End]-->
+			 
+
+			<!--[Featur Image Tags - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div href="#" data-target="#Container_Feature_IMG" data-toggle="collapse" class=""> Feature Image						 
+						<span class="fa fa-caret-down btn pull-right"  >  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_Feature_IMG">
+					<div class="Loading"></div>
+					 
+					<div class="feature_img_div"> 
+						<button class="btn btn-default    btn_feature_img_thumbnail" data-toggle="tooltip" data-placement="bottom" title="Click to remove">
+							<img src="" class="img-thumbnail img-responsive  feature_img_thumbnail"   width="75" height="75"  >						 
+						</button>
+					</div>
+					<br>
+				 
+					<div class="Btn_Feature_IMG btn btn-default"> Add Image</div>
+		 
+				</div>
+			</div>
+			<!--[Featur Image  - End]-->
+		 
+	</div>
+	<!--[Post SideBar DIV - End]-->
+
+</div>
+
+

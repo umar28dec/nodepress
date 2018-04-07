@@ -1,0 +1,49 @@
+<%- include header %>
+ 
+	<div style="padding:5px;"></div>
+	 
+		<!--[Load Single Post Content - Start]-->
+		
+		<%  if(post_content) { %>
+		<!--[Post Has Content - Start]-->
+
+				<!--[Post Name/URL- Start]-->
+
+				<h1  >
+					<a href="<%- post_url %>"  class="post_title_link" > <%- post_title %></a>
+				</h1>
+				 
+				<!--[Post Name/URL- End]-->
+			 
+				Author :<a href="<%- author_url %>"> <%- author_name %></a>
+
+				<%- post_dttm %>
+				<%- post_dttm_unix %>
+				
+				<br><br>
+				<div class="np_post_content"  > 
+					<%- post_content %>
+				</div> 
+				 
+			 	<br><br>
+				<%- include comments %>
+			
+		<!--[Post Has Content - End]-->
+
+		
+		<% }else { %>
+
+		<!--[Post Has No Content - Start]-->
+
+			<div>No blog post content found...</div>
+		<!--[Post Has No Content - End]-->	
+		<% } %>
+		
+		<br><br>		 
+ 
+		<!--[Load Single Post Content - End]-->
+	 
+ 
+ 
+
+<%- include footer.ejs %> 

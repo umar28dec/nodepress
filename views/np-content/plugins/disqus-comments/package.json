@@ -1,0 +1,17 @@
+{
+	"name": "Disqus Comment Plugins",
+
+	"description": "Use this plugin to use disqus comment platfom",
+
+	"plugin_file_name":"disqus-code.js",
+
+	"settings_file":"settings.js",
+
+	"settings_button_id":"btn_disqus_code",		
+
+	"version": "1.0",
+
+	"author_name": "Code With Mark",    
+
+	"author_url": "http://codewithmark.com"  
+}

@@ -1,0 +1,54 @@
+<%- include header.ejs %>
+
+
+<!--[Load Page Content - Start]-->
+<div class = "container">
+
+	<div class="row" >
+		 
+
+		<!--[Social Sharing - Start]-->
+
+		<!--[Social Sharing - End]-->
+
+		<!--[Page Has Content - Start]-->
+		<% if(post_content) { %>
+				<!--[Page Name/URL- Start]-->
+			<div class="panel panel-info"  > 
+			 
+				<div class="panel-heading" align="center"> 	 
+					<h2>
+					<a href="<%- post_url %>"  class="hlink"> <%- post_title %></a>
+					</h2>
+				</div> 
+				
+				<div class="panel-body np_page_content" style="padding:30px;" > 
+					<%- post_content %>
+
+					<br><br>
+				<%- include comments %>
+				</div> 
+				 
+			
+			</div>	
+		 
+		  
+		<!--[Page Has Content - End]-->
+
+		<!--[Page Has No Content - Start]-->
+		<%} else { %>
+			<div>No content found...</div>
+		<% } %>
+		<!--[Page Has No Content - End]-->
+
+		<br><br>
+		 
+	 
+	</div>
+
+</div>
+<!--[Load Page Content - End]-->
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<%- include header %>
+ 
+	<div style="padding:5px;"></div>
+	 
+		<!--[Load Single Post Content - Start]-->
+		
+		<%  if(post_content) { %>
+		<!--[Post Has Content - Start]-->
+
+
+				<div class="panel panel-info"  > 
+			 
+				<div class="panel-heading" align="center"> 	 
+					<h2>
+						<a href="<%- post_url %>"  class="hlink text-capitalize" style="color:black;"> <%- post_title %></a>
+					</h2>
+				</div> 
+				
+				<!--
+				<img src="<%- post_feature_img %>" class="img-responsive" alt=" " >
+				-->
+				
+				<div class="panel-body  np_post_content" style="padding:30px;" >  
+					<%- post_content %>
+
+				</div> 
+				
+				<div style="padding:15px;" class="container-fluid"> 
+					<div class="post_pre  text-left col-sm-6"> </div>
+					<div class="post_next text-right col-sm-6"> </div>
+				</div>
+						
+						<div  class="related_posts" style="padding:15px;"></div>
+
+				<br><br>
+				<%- include comments %>
+			</div>	
+		 
+			
+		<!--[Post Has Content - End]-->
+
+		
+		<% }else { %>
+
+		<!--[Post Has No Content - Start]-->
+
+			<div>No blog post content found...</div>
+		<!--[Post Has No Content - End]-->	
+		<% } %>
+		
+		<br><br>		 
+ 
+		<!--[Load Single Post Content - End]-->
+	 
+ 
+ 
+
+<%- include footer.ejs %> 

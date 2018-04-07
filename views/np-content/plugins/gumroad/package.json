@@ -1,0 +1,13 @@
+{
+  "name": "Gumroad",
+
+  "description": "This will include gumroad js file",
+
+  "plugin_file_name":"gumroad.js",
+
+  "version": "1.0",
+
+  "author_name": "The NodePress Team",    
+  
+  "author_url": "http://nodepressjs.com"  
+}

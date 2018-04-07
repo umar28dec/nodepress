@@ -1,0 +1,169 @@
+<div class="row animated fadeInUp div_contain_pretty_url_all">
+
+	<!--[add new pretty url div - end]-->
+	<div class="col-md-4">  
+
+  		<div class="panel panel-default">
+		  <div class="panel-heading">
+
+		  	<div  class=" btn_container_new_pretty_url" data-target="#Container_Pretty_URL" data-toggle="1collapse" aria-expanded="false">
+		  		Add New Pretty URL			 
+				<span class="fa fa-arrow-down btn pull-right">  </span>
+			</div> 
+
+		  </div>
+		  <div class="panel-body" id="Container_Pretty_URL">
+
+		  	<div class="new_pretty_url_alert"></div>
+
+		  	<div class="form-group container_new_pretty_url">
+
+		  		<em>* required fields</em>
+		  		<br> <br> 
+				<!--[long url slug - start]--> 
+				<label style="font-size:16px;">* Target URL
+					<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="This is the URL that your Pretty Link will redirect to" data-placement="right"></i>
+				</label>
+				<textarea class="form-control pretty_url_long btn_pretty_url_long"   placeholder="http://my-long-url.com/nodepress-js"></textarea>				
+				<!--[long url slug - end]--> 
+
+				<br>  
+				
+				<!--[short url slug - start]-->
+				<label style="font-size:16px;"  >* Short URL
+					<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="This is how your pretty link will appear. The “slug” is usually all lowercase and contains only letters, numbers, and hyphens" data-placement="right"></i>
+
+					<i class="btn   btn-sm fa fa-refresh btn_pretty_url_auto_code"  data-toggle="tooltip" title="Click here to generate auto code slug or type in the field below" data-placement="top"></i>
+				</label>							
+				 
+				<div class="input-group">
+			      <div class="input-group-addon SiteURL">* Site URL Will Go Here</div>
+			      <input type="text" class="form-control pretty_url_short" placeholder="my-short-url">
+		    	</div>					
+				<!--[short url slug - end]-->
+
+				<br>  
+
+				<!--[category name - start]-->
+				<label style="font-size:16px;">* Title
+					<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="A short title that will help you remember what this is for" data-placement="right"></i>
+				</label>		 
+				<input type="text" class="form-control pretty_url_title" placeholder="My URL Title">
+				<!--[category name - end]-->
+
+				<br> 
+				<!--[notes - start]-->
+				<label style="font-size:16px;">Note
+					<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="A short description that will help you remember what this is for" data-placement="right"></i>
+				</label>
+				<textarea class="form-control pretty_url_note" rows="2" cols="50" placeholder="something will help you remember what this is for"></textarea>
+				<!--[note - end]-->
+
+				<br>  
+
+
+
+				
+				<br>
+		  		<div class="btn  btn-primary btn_pretty_url" update_type="new">Add New Pretty URL</div>
+		  		<div class="btn  btn-link btn_pretty_url_cancel"  >Clear Fields</div>
+  			</div>
+
+		  </div>
+		</div> 
+	</div>
+	<!--[add new pretty url div - end]-->
+
+
+	<!--[current pretty url div - start]-->
+	<div class="col-md-12 pretty_url_list_container">		
+	 
+		<div class="panel panel-default">
+			<div class="panel-heading">Current Pretty URL List</div>
+
+			<div class="panel-body" >
+
+				<!--[bulk optons - start]-->
+				<div class="dropdown container_pretty_url_delete_selected">
+					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-original-title="" title="" aria-expanded="false">Bulk Action          
+					<span class="caret"></span></button>
+
+					<!--[menu optons - start]-->
+					<ul class="dropdown-menu">
+						<li class="divider"></li>
+						<li><a href="#" class="pretty_url_delete_selected">Delete</a></li>
+						<li class="divider"></li>
+					</ul>
+					<!--[menu optons - end]-->
+				</div>				
+				<!--[bulk optons - end]-->
+				<br>
+				<div class="pretty_url_bulk_alert"></div>
+
+				<div  class="pretty_url_list" ></div>
+
+			</div>
+		</div>
+	 
+	</div>
+	<!--[current pretty url div - end]-->
+ 
+
+</div>
+
+
+<!--[url stats - start]-->
+
+<div  class="container_pretty_url_stats" style="display:none;" >
+
+	<div class="panel panel-default">
+			<div class="panel-heading url_title">Current Pretty URL List</div>
+
+			<div class="panel-body" >
+
+				<!--[go back - start]-->			
+				<span class="btn btn-default fa fa-arrow-left pretty_url_go_back"> Go Back</span> 
+				<!--[go back - end]-->
+
+
+				<br><br><br>
+				 
+
+				<div class="col-sm-4">
+					<label >Target URL</label>
+					<span  class="pretty_url_long" ></span>
+				</div>
+
+				<div class="col-sm-4">
+					<label >Short URL</label>
+					<span  class="pretty_url_short" ></span>
+					
+				</div>
+					<br><br><br>
+				<div id="graph_data"  ></div>
+				<br><br><br>
+				
+
+				<ul class="nav nav-tabs">
+				  <li class="active"><a data-toggle="tab" href="#smry">Summary</a></li>
+				  <li><a data-toggle="tab" href="#details">Details</a></li>
+				</ul>
+
+				<div class="tab-content">
+
+				  <div id="smry" class="tab-pane fade in active pretty_url_stats_smry" style="padding:10px;">
+				    
+				  </div>
+				  <div id="details" class="tab-pane fade pretty_url_stats_details" style="padding:10px;">
+				    details
+				  </div>
+				  
+				</div>
+				
+
+			</div>
+		</div>
+
+</div>
+
+<!--[url stats - end]-->

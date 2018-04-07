@@ -1,0 +1,32 @@
+{
+  "name": "nodepress-js",
+  "version": "1.0.0",
+  "description": "NodeJs CMS like Wordpress",
+  "main": "app.js",
+  "scripts": {
+   "start": "node app.js"
+  },
+  "keywords": [
+    "nodepress",
+    "node",
+    "js",
+    "wordpress"
+  ],
+  "author": "Umar Farooque Khan",
+  "license": "MIT",
+  "dependencies": {
+    "alasql": "*",
+    "body-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "formidable": "*",
+    "lodash": "*",
+    "moment": "*",
+    "moment-timezone": "*",
+    "mongodb": "*",  
+    "request": "*",
+    "uglify-js": "*",
+    "uglifycss": "*",
+    "unzip":"*"
+  }
+}

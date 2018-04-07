@@ -1,0 +1,97 @@
+<div class="panel panel-default media_main_container">
+    <div style="padding:1px;" class="">
+
+    	<!--[tab names - start]-->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#media" role="tab" data-toggle="tab" aria-expanded="false">Thumbnail View</a>
+            </li>
+            <li role="presentation" class="">
+                <a href="#grid-view" role="tab" class="grid_view_id" data-toggle="tab" data-original-title="" title="" aria-expanded="true" style="display:none">Grid View</a>
+            </li>
+            <li role="presentation" class="">
+                <a href="#upload-new" class= "upload_new_check" role="tab" data-toggle="tab" data-original-title="" title="" aria-expanded="true">Upload New</a>
+            </li>
+        </ul>
+        <!--[tab names - end]-->
+
+        <!--[tab content - start]-->
+        <div class="tab-content" style="padding:10px;">
+
+            <div class="current_view_type" style="display:none"></div>
+
+
+        	<!--[tab media - start]-->             
+            <div role="tabpanel" class="tab-pane tab_media active " id="media" ></div>           
+            <!--[tab media - end]-->
+
+            <!--[tab media > grid view - start]-->
+            <div role="tabpanel" class="tab-pane grid-view " id="grid-view">
+
+                <br>
+                <div class="media_alert"></div>
+
+                <div class="dropdown grid_view_bulk_action_menu">
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Bulk Action          
+                  <span class="caret"></span></button>
+                  
+                  <!--[menu optons - start]-->
+                  <ul class="dropdown-menu">
+                    <li class="divider"></li>
+                    <li><a href="#" class="delete_selected_media_files">Delete</a></li>
+                    <li class="divider"></li>
+                  </ul>
+                  <!--[menu optons - end]-->
+
+                </div>
+
+                <div class="tab_grid_view"></div>
+
+
+                
+
+            </div>
+            <!--[tab media > grid view - end]-->
+
+            <!--[tab upload new - start]-->
+            <div role="tabpanel" class="tab-pane upload-new " id="upload-new">
+                
+                <!--[container upload new button - start]-->
+                <div class="container_new_media_uploader">
+                    <p>Here you can upload a new media </p>
+                    <br>
+                    <input class="btn btn-primary pull-center files btn_new_media_files" type="file" multiple="">
+                    <br>
+                </div>
+                <!--[container upload new button - end]-->
+
+
+                <!--[container alert messages - start]-->
+                <div class="new_media_file_upload_alert"></div>
+                <br><br>
+
+                <!--[container alert messages - end]-->
+
+                <div class="new_media_file_upload_preview"></div>
+                
+		 		<!--[Progress Bar - Start]-->
+                <br><br>
+				<div class="bs-example FileUploadProgressBar" style="display:none; ">
+					<div class="progress">
+						<div class="progress-bar  progress-bar-success" style="width: 0%;" >1%</div>
+					</div>
+				</div>
+				<!--[Progress Bar - End]-->
+                
+		 		<br><br>
+		 		
+		 		
+
+            </div>
+            <!--[tab upload new - end]-->
+
+        </div>
+        <!--[tab content - end]-->
+
+    </div>
+</div>
