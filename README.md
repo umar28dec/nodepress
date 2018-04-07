@@ -1,2 +1,0 @@
-# nodepress
-Simple Nodejs CMS
