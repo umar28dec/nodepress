@@ -1,0 +1,7 @@
+User-agent: * 
+
+Crawl-delay: 10 
+
+Disallow: /np-admin/ 
+
+Sitemap: http://localhost:3000/sitemap

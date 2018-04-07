@@ -1,0 +1,535 @@
+
+<style type="text/css">
+
+.category_item
+{
+  margin-bottom: 5px; 
+  padding:5px;
+}
+
+</style>
+<div class="container container_widget">
+
+
+    <div class="row">
+
+        <!--[pages/categories > start]-->
+        <div class="col-md-4">
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <h4>
+                        <b>Widgets</b>
+                        <i class="fa fa-arrow-right pull-right"></i> 
+                    </h4>
+                   
+                </div>
+               
+                <br><br>
+
+
+                        <!--[search > start]-->
+                        <div id="search" class="container_pages list-group-item">
+                            <span class="list-group-item btn_add_widget text-center" > Search</span>
+
+                            <div class="widget_container widget_container_search" style="display:none;">
+                                
+                                <!--[widget title > start]-->
+                                <span class="widget_title">
+                                    <b>Search</b>
+                                </span>
+                                <!--[widget title > end]-->
+
+                                <!--[widget button > start]-->                              
+                                <span class="btn btn-sm pull-right fa fa-arrow-down btn_widget_options"></span>                             
+                                <!--[widget button > end]-->
+
+
+                                <!--[widget option container > start]-->
+                                <div class="widget_options_container" style="display:none;">
+                                    <br>
+                                    <label>Reference Text: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="This will help you identify what the widget for. This will not be display on the front side of your site"></i>
+                                    <input type="text" class="form-control widget_reference_title"  >
+
+                                    <br>
+                                    <label>Title: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Type Your Title Below"></i>
+                                    <input type="text" class="form-control widget_search_title"  >
+                                </div>
+                                <!--[widget option container > end]-->
+
+                                <br>
+
+                                <!--[widget preview div > start]-->
+                                <div class="panel panel-default widget_options_container" style="display:none;">
+                                    <div class="panel-heading">Below is the preview:</div>
+                                    <div class="panel-body">
+
+                                        <!--[widget container div > start]-->
+                                        <div class="widget_container_div" style="display:none;">
+                                            
+                                            <label class="widget_search_form_title">Search for:</label>
+                                            <br>    
+                                            <input type="search" class="form-control widget_search_field np_search_box" required="" placeholder="Search ..." value="" name="s" title="Search for:">                                            
+                                            <button type="submit" class="btn fa fa-search np_btn_search">Search</button>
+                                        
+                                        </div>
+                                        <!--[widget container div  > end]-->
+                                    </div>
+                                </div>
+                                <!--[widget preview div > end]--> 
+
+
+                            </div>
+
+                            <!--[sidebar/footer > start]-->
+                            <i class="btn fa fa-plus btn_add_widget_sidebar pull-left" widget_type="search" data-toggle="tooltip" data-placement="right" title="Add To Sidebar" >Sidebar</i>
+                            <i class="btn fa fa-plus pull-right btn_add_widget_footer" widget_type="search" data-toggle="tooltip" data-placement="left" title="Add To Footer" > Footer</i>
+                            <br> <br> 
+                            <!--[sidebar/footer > end]-->
+                            
+                            
+                        </div>
+                        <!--[search > end]-->
+
+
+
+
+
+                        <!--[iframe > start]-->
+                        <div   class="list-group-item">
+                            
+                            <span class="list-group-item btn_add_widget text-center" > iFrame</span>
+
+                            <div class="widget_container widget_container_iframe" style="display:none;">
+                                
+                                <!--[widget title > start]-->
+                                <span class="widget_title">
+                                    <b>iFrame </b>
+                                </span>
+                                <!--[widget title > end]-->
+
+                                <!--[widget button > start]-->                              
+                                <span class="btn btn-sm pull-right fa fa-arrow-down btn_widget_options"></span>                             
+                                <!--[widget button > end]-->
+
+
+                                <!--[widget option container > start]-->
+                                <div class="widget_options_container" style="display:none;">
+                                    <br>
+                                    <label>Reference Text: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="This will help you identify what the widget for. This will not be display on the front side of your site"></i>
+                                    <input type="text" class="form-control widget_reference_title"  >
+
+                                    <br>
+                                    <label>URL: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Type Your iframe URL"></i>                      
+
+                                     
+                                    <textarea class="form-control widget_iframe_url" rows="3" placeholder="https://www.youtube.com/embed/PTgNuG7sfLY" ></textarea> 
+                                    <br>
+
+                                    <label>Height( in px) </label>
+                                     
+                                    
+                                    <input type="text" class="form-control widget_iframe_height" placeholder="450" >
+
+
+
+                                </div>
+                                <!--[widget option container > end]-->
+
+                                <br>
+
+                                
+                                <!--[widget preview div > start]-->
+                                <div class="panel panel-default widget_options_container" style="display:none;">
+                                    <div class="panel-heading">Below is the preview:</div>
+                                    <div class="panel-body">
+
+                                        <!--[widget container div > start]-->
+                                        <div class="widget_container_div" style="display:none;">                                     
+                                            <iframe class="  widget_iframe_field"    width="100%" height="450" frameborder="0" scrolling="auto"  src="https://www.youtube.com/embed/PTgNuG7sfLY"></iframe>          
+                                        </div>
+                                        <!--[widget container div  > end]-->
+                                    </div>
+                                </div>
+                                <!--[widget preview div > end]-->
+
+
+                                
+
+
+                            </div>
+
+                            <!--[sidebar/footer > start]-->
+                            <i class="btn fa fa-plus btn_add_widget_sidebar pull-left" widget_type="iframe" data-toggle="tooltip" data-placement="right" title="Add To Sidebar" >Sidebar</i>
+                            <i class="btn fa fa-plus pull-right btn_add_widget_footer" widget_type="iframe" data-toggle="tooltip" data-placement="left" title="Add To Footer" > Footer</i>
+                            <br> <br> 
+                            <!--[sidebar/footer > end]-->
+                            
+                            
+                        </div>
+                        <!--[iframe > end]-->
+
+
+                        <!--[categories > start]-->
+                        <div class="container_categories list-group-item">
+                        
+                            <span class="list-group-item btn_add_widget text-center" > Categories</span>
+
+                            <div class="widget_container widget_container_categories" style="display:none;">
+                                
+                                <!--[widget title > start]-->
+                                <span class="widget_title">
+                                    <b>Categories </b>
+                                </span>
+                                <!--[widget title > end]-->
+
+                                <!--[widget button > start]-->                              
+                                <span class="btn btn-sm pull-right fa fa-arrow-down btn_widget_options"></span>                             
+                                <!--[widget button > end]-->
+
+
+                                <!--[widget option container > start]-->
+                                <div class="widget_options_container" style="display:none;">
+                                    <br>
+                                    <label>Reference Text: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="This will help you identify what the widget for. This will not be display on the front side of your site"></i>
+                                    <input type="text" class="form-control widget_reference_title"  >
+
+                                    
+                                    <br>
+                                    <label>Title: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Type Your Title Below"></i>
+                                    <input type="text" class="form-control widget_category_title"  >
+
+
+                                    
+                                     
+                                    <br>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">Select Icon Class</div>
+                                        <button  class="btn btn-default mnu_iconpicker" type="button"></button>
+                                    </div>
+
+ 
+
+
+
+                                </div>
+                                <!--[widget option container > end]-->
+
+                                <br>
+
+                                
+                                <!--[widget preview div > start]-->
+                                <div class="panel panel-default widget_options_container" style="display:none;">
+                                    <div class="panel-heading">Below is the preview:</div>
+                                    <div class="panel-body">
+
+                                        <!--[widget container div > start]-->
+                                        <div class="widget_container_div" style="display:none;"> 
+
+                                            <h4 class="widget_from_category_title">Categories</h4>
+
+
+                                            <i class="category_item fa fa-arrow-right">
+                                                    
+                                                <span>  Category 1  </span>
+                                                                                        
+                                            </i>
+                                            <br>
+
+                                            <i class="category_item fa fa-arrow-right">
+                                                <span>Category 2</span>
+                                            </i>
+                                            <br>
+
+                                            <i class="category_item fa fa-arrow-right">
+                                                <span>Category 3</span>
+                                            </i>
+
+                                        </div>
+                                        <!--[widget container div  > end]-->
+                                    </div>
+                                </div>
+                                <!--[widget preview div > end]--> 
+
+
+                            </div>
+
+                            <!--[sidebar/footer > start]-->
+                            <i class="btn fa fa-plus btn_add_widget_sidebar pull-left" widget_type="categories" data-toggle="tooltip" data-placement="right" title="Add To Sidebar" >Sidebar</i>
+                            <i class="btn fa fa-plus pull-right btn_add_widget_footer" widget_type="categories" data-toggle="tooltip" data-placement="left" title="Add To Footer" > Footer</i>
+                            <br> <br> 
+                            <!--[sidebar/footer > end]-->
+
+
+                        </div>
+                        <!--[categories > end]-->
+
+
+                        <!--[text > start]-->
+                        <div   class="list-group-item">
+                            
+                            <span class="list-group-item btn_add_widget text-center" > Text</span>
+
+                            <div class="widget_container widget_container_text" style="display:none;">
+                                
+                                <!--[widget title > start]-->
+                                <span class="widget_title">
+                                    <b>Text </b>
+                                </span>
+                                <!--[widget title > end]-->
+
+                                <!--[widget button > start]-->                              
+                                <span class="btn btn-sm pull-right fa fa-arrow-down btn_widget_options"></span>                             
+                                <!--[widget button > end]-->
+
+
+                                <!--[widget option container > start]-->
+                                <div class="widget_options_container" style="display:none;">  
+                                    <br>
+                                    <label>Reference Text: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="This will help you identify what the widget for. This will not be display on the front side of your site"></i>
+                                    <input type="text" class="form-control widget_reference_title"  >
+
+                                    <br>
+                                    <!-- -->
+                                    <label>Title: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Type Your Title Below"></i>                         
+                                    <input type="text" class="form-control widget_text_title" placeholder="text" >
+                                   
+
+                                    <br>
+                                    <label>Content </label> 
+
+                                    <textarea class="widget_text_content" id="widget_text_content" > Type your content here</textarea> 
+ 
+
+
+                                </div>
+                                <!--[widget option container > end]-->
+
+                                <br>
+
+                                
+                                <!--[widget preview div > start]-->
+                                <div class="panel panel-default widget_options_container1" style="display:none;">
+                                    <div class="panel-heading">Below is the preview:</div>
+                                    <div class="panel-body">
+
+                                        <!--[widget container div > start]-->
+                                        <div class="widget_container_div" style="display:none;">
+
+                                            <h4 class="widget_from_text_title1"></h4>                                     
+                                            <span class="widget_from_text_content1"></span>
+                                                    
+                                        </div>
+                                        <!--[widget container div  > end]-->
+                                    </div>
+                                </div>
+                                <!--[widget preview div > end]-->
+
+
+                                
+
+
+                            </div>
+
+                            <!--[sidebar/footer > start]-->
+                            <i class="btn fa fa-plus btn_add_widget_sidebar pull-left" widget_type="text" data-toggle="tooltip" data-placement="right" title="Add To Sidebar" >Sidebar</i>
+                            <i class="btn fa fa-plus pull-right btn_add_widget_footer" widget_type="text" data-toggle="tooltip" data-placement="left" title="Add To Footer" > Footer</i>
+                            <br> <br> 
+                            <!--[sidebar/footer > end]-->
+                            
+                            
+                        </div>
+                        <!--[text > end]-->
+
+
+                        <!--[top posts > start]-->
+                        <div class="container_top_posts list-group-item">
+                        
+                            <span class="list-group-item btn_add_widget text-center" > Top Posts</span>
+
+                            <div class="widget_container widget_container_top_posts" style="display:none;">
+                                
+                                <!--[widget title > start]-->
+                                <span class="widget_title">
+                                    <b>Top Posts </b>
+                                </span>
+                                <!--[widget title > end]-->
+
+                                <!--[widget button > start]-->                              
+                                <span class="btn btn-sm pull-right fa fa-arrow-down btn_widget_options"></span>                             
+                                <!--[widget button > end]-->
+
+
+                                <!--[widget option container > start]-->
+                                <div class="widget_options_container" style="display:none;">
+
+                                    <br>
+                                    <label>Reference Text: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="This will help you identify what the widget for. This will not be display on the front side of your site"></i>
+                                    <input type="text" class="form-control widget_reference_title"  >
+
+                                    <br>
+                                    <label>Title: </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Type Your Title Below"></i>
+                                    <input type="text" class="form-control widget_top_posts_title"  >
+ 
+                                     
+                                    <br>
+                                    <label>Total Post </label>
+                                    <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Total Number Of Posts To Show"></i>
+                                    <input type="number" class="form-control widget_top_posts_counter"  >
+ 
+
+
+
+                                </div>
+                                <!--[widget option container > end]-->
+
+                                <br>
+
+                                
+                                <!--[widget preview div > start]-->
+                                <div class="panel panel-default widget_options_container" style="display:none;">
+                                    <div class="panel-heading">Below is the preview:</div>
+                                    <div class="panel-body">
+
+                                        <!--[widget container div > start]-->
+                                        <div class="widget_container_div" style="display:none;"> 
+
+                                            <h4 class="widget_from_top_posts_title">Top Posts Viewed</h4>
+                                          
+
+                                            <span class="widget_from_top_posts_counter">                                                
+                                                
+                                                <b>Post Title 1</b><hr>
+                                            </span>
+                                             
+                                            
+ 
+
+                                        </div>
+                                        <!--[widget container div  > end]-->
+                                    </div>
+                                </div>
+                                <!--[widget preview div > end]--> 
+
+
+                            </div>
+
+                            <!--[sidebar/footer > start]-->
+                            <i class="btn fa fa-plus btn_add_widget_sidebar pull-left" widget_type="top_posts" data-toggle="tooltip" data-placement="right" title="Add To Sidebar" >Sidebar</i>
+                            <i class="btn fa fa-plus pull-right btn_add_widget_footer" widget_type="top_posts"  data-toggle="tooltip" data-placement="left" title="Add To Footer" > Footer</i>
+                            <br> <br> 
+                            <!--[sidebar/footer > end]-->
+
+
+                        </div>
+                        <!--[top posts  > end]-->
+
+                        
+                    
+
+
+
+                
+                
+            </div>
+        </div>
+        <!--[pages/categories > end]-->
+
+
+         
+
+        <!--[sidebar > start]-->
+        <div class="col-md-4">
+            <div class="panel panel-success">
+                <div class="panel-heading clearfix">
+
+                    <h5 class="pull-left">Sidebar</h5>
+                    
+                    <div class="pull-right">
+                        
+                        <button type="button" class="btn btn-success btn_preview_widget_sidebar"  data-toggle="tooltip" data-placement="top" title="Preview will be shown at the bottom of widgets(first box on the left) container">
+                            <i class="fa fa-eye"></i> Preview
+                        </button>
+
+                        <button type="button" class="btn btn-success btn_save_widget_sidebar">
+                            <i class="fa fa-check"></i> Save
+                        </button>
+                    </div>
+
+                </div>
+                
+                <small style="color: #999">                   
+                     
+                    <em>*** Drag to re-order item ***</em> 
+                </small>
+
+                <div class="panel-body" >
+
+                    <ul class="sortableLists sortable_sidebar list-group  " style="list-style-type: none;"> 
+
+                    </ul>
+                </div>
+            </div>
+             
+        </div>
+        <!--[sidebar > end]-->
+
+
+        <!--[footer > start]-->
+        <div class="col-md-4">
+            <div class="panel panel-success">
+                <div class="panel-heading clearfix">
+
+                    <h5 class="pull-left">Footer</h5>
+                
+
+                    <div class="pull-right">
+                        
+                        <button type="button" class="btn btn-success btn_preview_widget_footer"  data-toggle="tooltip" data-placement="top" title="Preview will be shown at the bottom of widgets(first box on the left) container">
+                            <i class="fa fa-eye"></i> Preview
+                        </button>
+
+                        <button type="button" class="btn btn-success btn_save_widget_footer">
+                            <i class="fa fa-check"></i> Save
+                        </button>
+                    </div>
+
+                </div>
+                
+                <small style="color: #999">                   
+                     
+                    <em>*** Drag to re-order item ***</em> 
+                </small>
+
+                <div class="panel-body" >
+
+                    <ul class="sortableLists sortable_footer list-group  " style="list-style-type: none;"> 
+
+                    </ul>
+                </div>
+            </div>
+             
+        </div>
+        <!--[footer > end]-->
+
+       
+
+
+    </div>
+     
+</div>
+
+
+<!--[preview > start]-->
+<div class="temp_memu_data"></div>
+<!--[preview > end]-->

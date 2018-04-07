@@ -1,0 +1,86 @@
+ 
+<br><br>
+
+<div class="comments_alert"></div>
+
+<div class="comment_data_container">
+
+  <div class="panel panel-default">
+
+    <!--[header - start]-->
+    <div class="panel-heading">
+
+      <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Bulk Action          
+          <span class="caret"></span></button>
+          
+          <!--[menu optons - start]-->
+          <ul class="dropdown-menu">
+            <li class="divider"></li>
+            <li><a href="#" class="approved_selected_comments" update_to="approved">Approved</a></li>
+            <li class="divider"></li>
+            <li><a href="#" class="approved_selected_comments" update_to="pending">Pending</a></li>
+            <li class="divider"></li>
+            <li><a href="#" class="delete_selected_comments">Delete</a></li>
+            <li class="divider"></li>
+          </ul>
+          <!--[menu optons - end]-->
+
+      </div>
+    </div>
+    <!--[header - end]-->
+    
+    <!--[body - start]-->    
+    <div class="panel-body">
+      <div class="all_comments_data"></div>
+    </div>
+    <!--[body - end]--> 
+
+  </div>
+
+</div>
+
+<!--[comment container > start]-->
+<div class="template_container_comment" style="display:none;">
+  
+  <!--[author_name > start]-->  
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon">Author Name</div>
+      <input type="text" class="form-control author_name"   value="{author_name}">
+    </div>
+  </div>
+  <!--[author_name > end]-->
+
+  
+  <!--[author_email > start]-->  
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon">Author Email</div>
+      <input type="text" class="form-control author_email"   value="{author_email}">
+    </div>
+  </div>
+  <!--[author_email > end]-->
+
+  <!--[author_url > start]-->  
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon">Author URL</div>
+      <input type="text" class="form-control author_url"   value="{author_url}">
+    </div>
+  </div>
+  <!--[author_url > end]-->
+
+
+  <!--[author_comment > start]-->
+  <div class="form-group">
+    <label>Author comment</label>
+    <textarea class="form-control {text_author_comment}" id="{text_author_comment}" rows="3">{author_comment}</textarea>
+  </div>
+  <!--[author_comment > end]-->
+
+  <br><span  class="btn btn-success {btn_class_name}" comment_id="{comment_id}"  >{btn_name_text}</span>
+  
+
+</div>
+<!--[comment container > end]-->

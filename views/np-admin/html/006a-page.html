@@ -1,0 +1,186 @@
+
+
+<div class="row animated fadeInUp">
+
+	<!--[Page Content DIV - Start]-->
+	<div class="col-md-10"> 
+
+		<div class="form-group">
+			<label style="font-size:16px;"  >Page Name</label>
+			<input type="text" class="form-control PostTitle"  placeholder="Page Title" autofocus tabindex=0>
+			  
+		    <br><br>
+
+		    <div class="input-group">
+		      <div class="input-group-addon SiteURL">SiteURL</div>
+		      <input type="text" class="form-control PostURL" placeholder="my-page-url" tabindex=-2>		       
+		    </div>
+
+  		</div>
+
+  		<br>
+
+  		<!--[Teaser Content - Start]-->
+		<div class=" panel panel-default panel-body">
+	  		<label style="font-size:16px;"  data-target="#Container_TeaserContent" data-toggle="collapse" class="btn btn-default TeaserAlertMsg " >Teaser Content
+	  		<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="Click The Button To Hide/Show" data-placement="right"></i>
+	  		</label>
+	  		<br>
+	 
+
+	  		<div id="Container_TeaserContent">
+		  		<br>
+		  		<small>
+		  			<p class="text-muted">***This will be used for your page meta description***</p>
+		  		</small>
+	  			<textarea class="np_editor Content_Teaser " id="Content_Teaser" tabindex=2> </textarea>
+  				<br>
+ 
+			</div>
+		</div>
+	    <!--[Teaser Content- End]-->
+		<br>		
+
+  		<!--[Page Content - Start]-->
+		<div class=" panel panel-default panel-body">
+	  		<label style="font-size:16px;"  data-target="#Container_PostContent" data-toggle="collapse" class="btn btn-default PageContentAlertMsg" >Page Content
+	  		<i class="fa fa-question-circle-o"  data-toggle="tooltip" title="Click The Button To Hide/Show" data-placement="right"></i>
+	  		</label>
+
+	  		<div id="Container_PostContent">
+	  			<br>
+	  			<div class="btn btn-primary btn_insert_gallery_screen">Insert Gallary</div>
+	  			<br>
+	  			<textarea class="np_editor Content_Post "   id="Content_Post" tabindex=3> </textarea>
+	  		</div>
+  		</div>
+  		<br>
+  		<!--[Teaser Content- End]-->
+	 
+
+	</div>
+
+	<!--[Page Content DIV - End]-->
+
+	<!--[Page SideBar DIV - Start]-->
+	<div class="col-md-2">		
+		  
+			<!--[Publish Date/Time SideBar DIV - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div href="#" data-target="#Container_PublishDttm" data-toggle="collapse"  > Publish						 
+						<span class="fa fa-caret-down btn pull-right"  >  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_PublishDttm">
+					<a class="btn btn-default btn-sm pull-left Btn_PublishPage"  update_type="draft" post_status="draft" href="#" role="button" tabindex=-2>Save Draft</a>
+					<a class="btn btn-default btn-sm pull-right Btn_PagePreview" href="#" role="button" tabindex=-2>Preview</a>
+					<br><br>
+					
+					<label>Access Type</label>
+					<select class="form-control LinkAccessType"  >
+					 	<option value="public" >public</option>	
+					 	<option value="link access">link access</option>											  				 
+					</select> 
+					
+					<br><br>
+
+					<label>Publish Date/Time</label>
+					<br>
+					<span class="curr_page_dttm"></span>
+					<br><br>			
+
+					<input type="text" class="form-control PostDttm" tabindex=4 >
+					<br>
+				 	<div class="btn  btn-primary Btn_PublishPage" update_type="new" post_status="publish"> Publish</div>
+				</div>
+			</div>
+			<!--[Publish Date/Time SideBar DIV - End]-->
+
+			<!--[Comments Allow - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div data-target="#Container_Allow_Comments" data-toggle="collapse"> Allow Comments						 
+						<span class="fa fa-caret-down btn pull-right">  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_Allow_Comments">
+					<select class="form-control AllowComments" tabindex=6>
+					 	<option value="No">No</option>	
+						<option value="Yes" >Yes</option>					  				 
+					</select> 
+					 
+				</div>
+			</div> 
+			<!--[Comments Allow - End]-->
+
+
+
+			<!--[SideBar Tags - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div href="#" data-target="#Container_Tags" data-toggle="collapse"   > Tags						 
+						<span class="fa fa-caret-down btn pull-right"  >  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_Tags">
+					<textarea class="PostTags" placeholder='write some tags' rows="10" tabindex=5 ></textarea>
+					<br>
+		 
+				</div>
+			</div>
+			<!--[SideBar Tags  - End]-->
+
+
+			<!--[Page Templates  - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div data-target="#Container_Page_Template" data-toggle="collapse"> Page Template						 
+						<span class="fa fa-caret-down btn pull-right">  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_Page_Template">
+					<select class="form-control PageTemplate" tabindex=7>					 
+						<option value="default" template_desc="This is default page">Default</option>					  				 
+					</select> 
+					<br>
+					<div class="page_template_desc"></div>
+				</div>
+			</div> 
+			<!--[Page Templates  - End]-->
+			 
+
+			<!--[Featur Image Tags - Start]-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div href="#" data-target="#Container_Feature_IMG" data-toggle="collapse" class=""> Feature Image						 
+						<span class="fa fa-caret-down btn pull-right"  >  </span>
+					</div>  
+				</div>
+
+				<div class="panel-body" id="Container_Feature_IMG">
+					<div class="Loading"></div>
+					 
+					<div class="feature_img_div"> 
+						<button class="btn btn-default    btn_feature_img_thumbnail" data-toggle="tooltip" data-placement="bottom" title="Click to remove">
+							<img src="" class="img-thumbnail img-responsive  feature_img_thumbnail"   width="75" height="75"  >						 
+						</button>
+					</div>
+					<br>
+				 
+					<div class="Btn_Feature_IMG btn btn-default"> Add Image</div>
+		 
+				</div>
+			</div>
+			<!--[Featur Image  - End]-->
+		 
+	</div>
+	<!--[Page SideBar DIV - End]-->
+
+</div>
+
+

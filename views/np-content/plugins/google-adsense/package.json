@@ -1,0 +1,17 @@
+{
+	"name": "Google Adsense",
+
+	"description": "Use this plugin to use Google Adsense",
+
+	"plugin_file_name":"google-adsense.js",
+
+	"settings_file":"settings.js",
+
+	"settings_button_id":"btn_google_adsense",		
+
+	"version": "1.0",
+
+	"author_name": "Code With Mark",    
+
+	"author_url": "http://codewithmark.com"  
+}

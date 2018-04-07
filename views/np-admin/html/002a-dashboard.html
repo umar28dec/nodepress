@@ -1,0 +1,240 @@
+ 
+<!--[Loading Page Message - Start]-->       
+<div class="LoadingMsg" style="position: fixed; height: 100%; width: 100%; top:0; left: 0; background: white; z-index:9999;font-size: 60px; text-align: center; padding-top: 200px; color:black;">
+    <i class="fa fa-spinner fa-spin fa-2x"></i><br>LOADING     
+</div>
+<!--[Loading Page Message - End]-->
+
+
+<!--[Body Content - Start]-->
+<div id="wrapper" class="ScreenContainer" style="display:none;" >
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!--[Site Name And Logo - Start]-->
+                
+                    <i class="spc spc-logo" style="color:white;font-size:50px"></i> 
+                        <!--[Site Name - Start]-->
+                        <a class="navbar-brand sit_name" href="#" style="color:white1;" target="_blank" >Site Name</a>
+                        <!--[Site Name - Start]-->
+                 <!--[Site Name And Logo - End]-->
+
+            </div>
+
+
+            <!--[Top Right Hand Menu Items - Start]-->
+            <ul class="nav navbar-right top-nav">           
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle fa fa-user text-capitalize  " data-toggle="dropdown" > 
+                        <i class="logged_in_user_name">  Hi,  John Smith </i>  
+                        <b class="caret"></b>
+                    </a>
+            
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#/users/your-profile" class="ScreenMenu" ><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                         <li class="divider"></li>
+           
+                        <li>
+                            <a href="#" class="logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+            <!--[Top Right Hand Menu Items - Start]-->
+
+
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+ 
+                <!--[Menu Post - Start]-->
+                    <li >
+                       <a href="#"  data-target="#Posts" data-toggle="collapse" ><i class="fa fa-thumb-tack"></i> Posts <b class="caret"></b></a>                   
+                          <ul class="collapse TopMenu" id="Posts" >
+                            <li><a href="#/posts/all"   class="ScreenMenu"   > All Posts</a></li>
+                            <li><a href="#/posts/new"   class="ScreenMenu"  > Add New</a></li>
+                            <li><a href="#/posts/categories"   class="ScreenMenu" >  Categories</a></li>                    
+                          </ul>
+                    </li> 
+                <!--[Menu Post - End]-->
+          
+
+                <!--[Menu Media - Start]-->
+                    <li>
+                        <a href="#/media" class="ScreenMenu"  ><i class="fa fa-camera "></i> Media </a>
+                    </li>
+                <!--[Menu Post - End]-->
+          
+
+                <!--[Menu Pages - Start]-->
+                    <li>
+                       <a href="#" data-target="#Pages" data-toggle="collapse" ><i class="fa fa-files-o "></i> Pages <b class="caret"></b></a>                   
+                          <ul class="collapse TopMenu" id="Pages" >
+                            <li><a href="#/pages/all"   class="ScreenMenu"  > All Pages</a></li>
+                            <li><a href="#/pages/new"   class="ScreenMenu"  > Add New</a></li>
+                          </ul>
+                    </li> 
+                <!--[Menu Post - End]-->
+
+                    <li>
+                        <a href="#/comments" class="ScreenMenu"   ><i class="fa fa-comment-o"></i>  Comments</a>
+                    </li>
+
+                <!--[Menu Themes - Start]-->
+                    <li>
+                       <a href="#" data-target="#Appearance" data-toggle="collapse" ><i class="fa fa-paint-brush    fa-rotate-180 "></i> Appearance <b class="caret"></b></a>                   
+                          <ul class="collapse TopMenu" id="Appearance">
+                            <li><a href="#/appearance/themes"   class="ScreenMenu"  > Themes</a></li>
+                            <li><a href="#/appearance/menu"   class="ScreenMenu" > Menu</a></li>
+                            <li><a href="#/appearance/widgets"   class="ScreenMenu"  > Widgets</a></li>
+                           
+                          </ul>
+                    </li> 
+                <!--[Menu Themes - End]-->
+
+                <!--[Menu Plugins - Start]-->
+                    <li>
+                       <a href="#" data-target="#Plugins" data-toggle="collapse" ><i class="fa fa-plug"></i> Plugins <b class="caret"></b></a>                   
+                          <ul class="collapse TopMenu" id="Plugins">
+                            <li><a href="#/plugins/installed"   class="ScreenMenu"  > Installed</a></li>
+                            <li><a href="#/plugins/upload-new"   class="ScreenMenu"  > Add New</a></li> 
+                          </ul>
+                    </li> 
+                <!--[Menu Plugins - End]-->
+
+
+
+                <!--[Menu Users - Start]-->
+                    <li>
+                       <a href="#" data-target="#Users" data-toggle="collapse" ><i class="fa fa-user "></i> Users <b class="caret"></b></a>                   
+                          <ul class="collapse TopMenu" id="Users">
+                            
+                            <li><a href="#/users/your-profile"   class="ScreenMenu"  > Your Profile</a></li>
+                          </ul>
+                    </li> 
+                <!--[Menu Users - End]-->
+
+
+
+                <!--[Menu Settings - Start]-->
+                    <li>
+                       <a href="#" data-target="#Settings" data-toggle="collapse"  ><i class="fa fa-cog "></i> Settings <b class="caret"></b></a>                   
+                          <ul class="collapse TopMenu" id="Settings">
+                            <li><a href="#/settings/general"   class="ScreenMenu"  > General</a></li>
+                            <li><a href="#/settings/reading"   class="ScreenMenu"  > Reading</a></li>
+                            <li><a href="#/settings/discussion"   class="ScreenMenu"  > Discussion</a></li>
+                            <li><a href="#/settings/cdn"   class="ScreenMenu"  > CDN</a></li>
+                          </ul>
+                    </li> 
+                <!--[Menu Settings - End]-->
+
+
+                <!--[Menu SEO - Start]-->
+                    <li>
+                        <a href="#/seo" class="ScreenMenu"  ><i class="fa fa-search "></i> SEO </a>
+                    </li>
+                    <li>
+                <!--[Menu SEO - End]-->
+                
+                <!--[Menu Pretty URL - Start]-->
+                    <li>
+                        <a href="#/pretty-url" class="ScreenMenu"  ><i class="fa fa-link "></i> Pretty URL </a>
+                    </li>
+                    <li>
+                <!--[Menu Pretty URL - End]-->
+
+
+
+                <!--[Menu Settings - Start]-->
+                    <li>
+                       <a href="#" data-target="#Tools" data-toggle="collapse"  ><i class="fa fa-wrench "></i> Tools <b class="caret"></b></a>                   
+                          <ul class="collapse TopMenu" id="Tools">
+                            <li><a href="#/tools/export"   class="ScreenMenu"  > Export</a></li>
+                            <li><a href="#/tools/import"   class="ScreenMenu"  > Import</a></li>
+                            
+                          </ul>
+                    </li> 
+                <!--[Menu Settings - End]-->
+ 
+ 
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </nav>
+
+ 
+        <div id="page-wrapper" >
+   
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    
+                    
+                    <div class="col-lg-12">
+                        <h1 class="page-header" id="user-screen-type">
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-home" ></i>  <a href="#/home" class="home_screen ScreenMenu" >Home</a>
+                            </li>
+                            <li> 
+                                <i class="CurrentScreenName"> </i> 
+                            </li>
+                        </ol>
+                        </h1>
+                    </div>
+                    
+                    <!--[Need This For Correct Formating - Start]-->
+                    <div class="container"   ></div>
+              
+                    <!--[Need This For Correct Formating - End]-->
+
+ 
+           
+                    <!--[ScreenData - Start]-->
+                    
+                       <div class="MsgBox" style="padding:20px;"></div>
+
+
+                       
+
+                      <div class="ScreenData" style="padding:20px;"></div>
+                     
+                    <!--[ScreenData - Start]-->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!--[Body Content - End]-->
+    
+<!--[Dashboard Screen - End]-->
+ 
+
+
+
+<!--[Temp Screens - Start]-->
+<div class="Screen_Templates" style="display:none;">
+    
+</div>
+<!--[Temp Screens - End]--> 

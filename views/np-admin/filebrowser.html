@@ -1,0 +1,118 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/np-core/libs/awesome-functions/awesome-functions.min.js" type="text/javascript"></script> 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.7.0/js/canvas-to-blob.js" type="text/javascript"></script>
+
+<script src="js/app.js" type="text/javascript"></script>
+
+ 
+
+<script type="text/javascript">
+$(document).ready(function()
+{ 
+	//$(document).tooltip({ selector: "[data-toggle]" }); 
+ 	var CallType   = 'GET' //--->Other options: GET/POST/DELETE/PUT
+	var AjaxURL    = 'media';
+	var DataString = 
+	{		 
+		datasend:'files',
+	};
+	//var ajax = np_config_ajax(CallType,AjaxURL,DataString);
+	var ajax = np_admin_ajax(CallType,AjaxURL,DataString);
+
+	//error
+	ajax.fail(function(xhr, ajaxOptions, thrownError)  
+	{ 
+		 	 
+	  //do your error handling here
+	  
+		bs.ClearError();
+		var Msg = 'There was an error message ('+thrownError+') while trying to process your request. <br><br>'
+		+ 'Please try agin in a few seconds.<br><br>';     
+
+		var ErrorMsg = bs.AlertMsg(Msg,'error');
+
+		$('.LoginAlert').html(ErrorMsg).show();
+
+		console.log(thrownError);
+		console.log(xhr); 
+
+		return false    
+		 
+	});
+
+	//success
+	ajax.done(function(data) 
+	{ 
+		$('.LoadingMsg').hide();
+ 
+		//do your success data processing here
+		//console.log(data)
+		
+		var Status = data.status ;
+
+		$.get('html/005a-media.html', function(template_data)     
+		{  
+			//load the template
+			$('.IMGContent').html(template_data).show();   			
+
+			if(Status == 'error')
+			{
+				var d = bs.AlertMsg(data.msg, "error");
+				
+				$(document).find('.tab_media').html(d); 				
+
+			}
+			else if(Status == 'success')
+			{
+				var img_data = data.arr_files
+
+				var d = ''
+    			+ '<div id="" style="overflow-y: scroll; height:400px;">'+GenerateMediaView(img_data)+'</div>';
+
+
+				$(document).find('.tab_media').html(GenerateMediaView(img_data));
+			}
+ 		}); 
+		 
+	});
+
+	$(document).on("click",".media_file",function()
+	{
+		item_url = $(this).find('.copy_file_path').attr('file_path');
+		var args = top.tinymce.activeEditor.windowManager.getParams();
+		win = (args.window);
+		input = (args.input);
+		win.document.getElementById(input).value = item_url;
+		top.tinymce.activeEditor.windowManager.close();
+	});
+
+	//--->upload new media - start
+//btn_new_media_files
+
+	 
+//$('.btn').on('change', function(e) 
+ 
+
+//--->upload new media - end 
+
+});
+</script>
+
+<!--[Loading Page Message - Start]-->       
+<div class="LoadingMsg" style="position: fixed; height: 100%; width: 100%; top:0; left: 0; background: white; z-index:9999;font-size: 60px; text-align: center; padding-top: 200px; color:black;">
+    <i class="fa fa-spinner fa-spin fa-2x"></i><br>LOADING     
+</div>
+<!--[Loading Page Message - End]-->
+
+<div class="LoginAlert"></div>
+
+
+<div class="IMGContent"></div>

@@ -1,0 +1,35 @@
+<%- include header.ejs %>
+
+	<!--[Load Page Content - Start]-->
+
+	 
+		
+		<% if(post_content) { %>
+		<!--[Page Has Content - Start]-->
+
+		<div class="np_page_content"  >  
+			<%- post_content %>
+ 
+		</div> 
+		 
+
+		<!--[Page Has Content - End]-->
+
+		
+		<%} else { %>
+		<!--[Page Has No Content - Start]-->
+			<div>No content found...</div>
+		<!--[Page Has No Content - End]-->
+		<% } %>
+		
+ 
+	
+	<!--[Load Page Content - End]-->
+
+
+	
+</div>
+
+</body>
+
+</html>

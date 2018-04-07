@@ -1,0 +1,36 @@
+ 
+<div class="container_import_main_container">
+    <p>Here you can import your site's data file </p>
+    <br>
+
+    1) <mark>After your import process is finished, you will have to re-log in</mark>
+    -->
+    <mark>for password: <b> use the one in your json data file your importing</b></mark>
+    <br><br>
+    2) You will have to update your site url under: Settings > General 
+
+     
+	<br>
+	<select class="btn-group btn btn-default  import_type ">
+		<option value="">Select A Status</option>
+		<option value="delete">Clean - Delete All Old Data</option>
+		<option value="append">Append</option>
+	</select>
+	<br> <br> 
+
+
+
+	<label>Select Data File(.json)</label>
+	<input class="btn btn-default pull-center import_site_file " type="file">
+    <br> 
+
+	<br> <br> 
+
+    <span class="btn btn-primary btn_import_site_data_file"> Import</span>
+</div>
+
+
+<textarea class="import_data"  rows="4" cols="5" style="display:none;"></textarea>
+
+
+<div class="import_error_msg"></div>

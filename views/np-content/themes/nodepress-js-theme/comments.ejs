@@ -1,0 +1,80 @@
+			
+	
+<div class="comment_container">
+
+	<%	if(post_comments.length > 0 ) { %>
+
+	<!--[Post Comments - Start]-->
+
+	
+
+		<!--[Show Comments - Start]-->	
+
+			<%	post_comments.forEach(function(value) {%>
+				
+				<div  class="" comment_id="<%- value.comment_id %>">
+
+					<div class="">
+						<b class=""> <%- value.comment_author %> </b> 
+						<br>
+
+
+						<span ><%- value.rec_dttm %></span>
+						<br>
+						<span ><%- value.rec_dttm_unix %></span>
+						<br>
+						<span >says:</span>
+						<br>
+						<span ><%- value.comment_content %></span>
+						<br>
+									
+					</div>
+				</div> 
+
+			<%	}) %>
+		
+		<!--[Show Comments - End]-->
+	<%	} %>
+
+
+			<%	if( comments_allow !='no') { %>
+			<!--[Add New Comment Form - Start]-->
+			<div class="comment_alert"></div>
+
+			<div class="new_comment_container">
+
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon">Name</span>
+					<input type="text" id="comment_author"  class="form-control comment_author"  placeholder="Name (required)">
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon">Email</span>
+					<input type="text" id="comment_email"  class="form-control comment_email" placeholder="Mail (will not be published) (required)">
+				</div>
+
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon"> Website</span>
+					<input type="text" id="comment_website"  class="form-control comment_website"  name="password" placeholder="Website">
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon">Comment</span>
+					<textarea id="comment_content"  class="form-control comment_content" placeholer="Your Comment" rows="5"> </textarea>
+				</div>
+
+				<br>
+				<div class="btn btn-primary btn_post_comment" post_id="<%- post_id %>" > Post Comment</div>
+			</div>
+			<!--[Add New Comment Form  - End]-->
+			<%	} %>
+
+	
+	<!--[Post Comments - End]-->
+
+</div>
+
+
+

@@ -1,0 +1,37 @@
+<%- include header.ejs %>
+
+
+<!--[Load Page Content - Start]-->
+
+<div class="row-fluid panel panel-default panel-body">
+
+<!--[Page Has Content - Start]-->
+<% if(page_content) { %>
+		<!--[Page Name/URL- Start]-->
+		<h1>
+			<a href="<%- page_url %>"  > <%- page_name %></a>
+		</h1>
+		<!--
+		[Page Name/URL- End]-->
+	
+		<%- post_dttm %>
+		<%- post_dttm_unix %>
+		
+		<%- page_content %>
+ 
+		
+  
+<!--[Page Has Content - End]-->
+
+<!--[Page Has No Content - Start]-->
+<%} else { %>
+	<div>No content found...</div>
+<% } %>
+<!--[Page Has No Content - End]-->
+
+<br><br>
+ 
+</div>
+<!--[Load Page Content - End]-->
+
+<%- include footer.ejs %> 

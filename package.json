@@ -1,0 +1,29 @@
+{
+  "name": "nodepress-js",
+  "version": "1.0.0",
+  "description": "NodePress JS - Next Generation Of Wordpress",
+  "main": "app.js", 
+  "keywords": [
+    "nodepress",
+    "node",
+    "js",
+    "wordpress"
+  ],
+  "author": "Mark Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "alasql": "*",
+    "body-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "formidable": "*",
+    "lodash": "*",
+    "moment": "*",
+    "moment-timezone": "*",
+    "mongodb": "*",  
+    "request": "*",
+    "uglify-js": "*",
+    "uglifycss": "*",
+    "unzip":"*"
+  }
+}

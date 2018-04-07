@@ -1,0 +1,123 @@
+<%
+function format_view_count (num,decimalpoint) 
+{
+	if(num != '')
+	{ 
+		var result;
+		if(num<0)
+		{
+			result = num; 
+		}
+      	else  if (num >= 0 && num<999) 
+		{
+			//format to thousand
+		    result = num; 
+		}
+		else  if (num >= 1000 && num<999999) 
+		{
+			//format to thousand
+		    result =  (num / 1000).toFixed(decimalpoint).replace(/\.0$/, '') + 'K';
+		}
+		else if (num >= 1000000) 
+		{
+			//format to million
+		    result =    (num / 1000000).toFixed(decimalpoint).replace(/\.0$/, '') + 'M';
+		}  
+		return result;
+	}
+}
+%>
+
+<% if ( have_posts.length > 0 ){ %>
+
+<% have_posts.forEach(function(ele,index){ %>	
+
+<div class="panel panel-info"> 				
+ 	
+ 	<div class="panel-heading"> 
+ 		<a href="<%- ele.post_url %>" class=" post_title_link text-capitalize" style=" "> <%-  ele.post_title  %></a>
+	</div>
+	
+
+	<div class="panel-body"> 
+
+		
+
+		<% if ( ele.post_feature_img ){ %>
+		<% 
+			var GetFileName = function(FileURL)
+		    {
+		      var GetFileName = FileURL.substring( FileURL.lastIndexOf('/')+1 );
+		      var RemoveFileExt = GetFileName.split('.')[0];
+		      return RemoveFileExt;
+		    }
+		    var FileName = ele.post_feature_img;
+		    var GetSiteName =  GetFileName(site_url);
+        	var IMG_GetFileName  = GetFileName (FileName);
+        	var AddAltText = GetSiteName + '-'+IMG_GetFileName; 
+		%>
+		<div class="col-md-6">   <img src="<%- ele.post_feature_img %>" class="img-responsive" alt="<%- AddAltText %>" ></div>
+ 
+
+		<div class="col-md-6">
+			
+			<%- ele.post_teaser %>
+			
+			<span> Author :<a href="<%- site_url %>"> <%- ele.post_author_name %></a> </span>
+			<br><br>
+
+			<% if(ele.post_views>0) { %> 
+
+			<!--[post_views Counter - Start]-->
+			<span style=" padding:0px;font-size: 15px;" class="fa fa-eye" title="Total Views">  <%- format_view_count(ele.post_views,2)  %> </span>
+			<!--[post_views Counter - Start]-->						
+			
+			<% } %>
+
+
+			<% if(ele.comment_counter>0 &&  (ele.comments_allow).toLowerCase() =='yes') { %> 
+
+			<!--[Comment Counter - Start]-->			
+			<span style=" padding:0px;font-size: 15px;" class="fa fa-commenting-o" title="Total Comments"> <%- ele.comment_counter %> </span>
+			<!--[Comment Counter - Start]-->						
+			<%} %>
+
+		 	&nbsp
+			<a href="<%-  ele.post_url %>" class="  fa fa-arrow-right hlink1" > <%- ele.post_excerpt %> </a>
+		</div>
+
+		<% } else{ %>
+
+			<%- ele.post_teaser %> 
+			
+			<span style="padding:0px;"> Author :<a href="<%- site_url %>"> <%- ele.post_author_name %></a> </span>
+			<br><br>
+
+			<% if(ele.post_views>0) {%> 
+			<!--[Comment Counter - Start]-->
+			<span style=" padding:0px;font-size: 15px;" class="fa fa-eye" title="Total Views"> <%- ele.post_views %> </span>
+			<!--[Comment Counter - Start]-->						
+			<%} %>
+
+
+			<% if(ele.comment_counter>0 &&  (ele.comments_allow).toLowerCase() =='yes') {%> 
+			<!--[Comment Counter - Start]-->
+			<span style=" padding:0px;font-size: 15px;" class="fa fa-commenting-o" title="Total Comments"> <%- ele.comment_counter %> </span>
+			<!--[Comment Counter - Start]-->						
+			<%} %>
+			
+			<a href="<%-  ele.post_url %>" class="  fa fa-arrow-right hlink1" > <%- ele.post_excerpt %></a>
+
+		<% } %> 
+		 
+ 	</div>
+</div>
+
+ 	<%}) %>
+
+<% }else if(have_posts.length < 1){ %>
+
+<!--[If no content, include the "No posts found" template.]-->
+ <h1>No posts found</h1>
+
+<%} %> 
