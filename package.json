@@ -1,15 +1,18 @@
 {
   "name": "nodepress-js",
   "version": "1.0.0",
-  "description": "NodePress JS - Next Generation Of Wordpress",
-  "main": "app.js", 
+  "description": "NodeJs CMS like Wordpress",
+  "main": "app.js",
+  "scripts": {
+   "start": "node app.js"
+  },
   "keywords": [
     "nodepress",
     "node",
     "js",
     "wordpress"
   ],
-  "author": "Mark Kumar",
+  "author": "Umar Farooque Khan",
   "license": "MIT",
   "dependencies": {
     "alasql": "*",
