@@ -1,0 +1,4 @@
+{
+  "db_conn": "mongodb://nodepress:nodepress@ds161042.mlab.com:61042/umar",
+  "sit_url": "https://nodepress.herokuapp.com"
+}
